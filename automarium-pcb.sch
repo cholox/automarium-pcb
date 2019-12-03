@@ -1,0 +1,178 @@
+EESchema Schematic File Version 4
+LIBS:automarium-pcb-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Regulator_Linear:AMS1117-3.3 U?
+U 1 1 5D88B61F
+P 4900 4600
+F 0 "U?" H 4900 4842 50  0000 C CNN
+F 1 "AMS1117-3.3" H 4900 4751 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 4900 4800 50  0001 C CNN
+F 3 "http://www.advanced-monolithic.com/pdf/ds1117.pdf" H 5000 4350 50  0001 C CNN
+	1    4900 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:AMS1117-5.0 U?
+U 1 1 5D88B6D1
+P 5900 4600
+F 0 "U?" H 5900 4842 50  0000 C CNN
+F 1 "AMS1117-5.0" H 5900 4751 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 5900 4800 50  0001 C CNN
+F 3 "http://www.advanced-monolithic.com/pdf/ds1117.pdf" H 6000 4350 50  0001 C CNN
+	1    5900 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Barrel_Jack J?
+U 1 1 5D88BD2E
+P 1450 5250
+F 0 "J?" H 1505 5575 50  0000 C CNN
+F 1 "Barrel_Jack" H 1505 5484 50  0000 C CNN
+F 2 "" H 1500 5210 50  0001 C CNN
+F 3 "~" H 1500 5210 50  0001 C CNN
+	1    1450 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 5150 2300 5150
+Wire Wire Line
+	1750 5350 1850 5350
+$Comp
+L Device:CP 100uF
+U 1 1 5D88BEBE
+P 2300 5300
+F 0 "100uF" H 2418 5346 50  0000 L CNN
+F 1 "CP" H 2418 5255 50  0000 L CNN
+F 2 "" H 2338 5150 50  0001 C CNN
+F 3 "~" H 2300 5300 50  0001 C CNN
+	1    2300 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D88BFBF
+P 2300 5450
+F 0 "#PWR?" H 2300 5200 50  0001 C CNN
+F 1 "GND" H 2305 5277 50  0000 C CNN
+F 2 "" H 2300 5450 50  0001 C CNN
+F 3 "" H 2300 5450 50  0001 C CNN
+	1    2300 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D88C01A
+P 1850 5350
+F 0 "#PWR?" H 1850 5100 50  0001 C CNN
+F 1 "GND" H 1855 5177 50  0000 C CNN
+F 2 "" H 1850 5350 50  0001 C CNN
+F 3 "" H 1850 5350 50  0001 C CNN
+	1    1850 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP 100uF
+U 1 1 5D88C218
+P 5300 4750
+F 0 "100uF" H 5418 4796 50  0000 L CNN
+F 1 "CP" H 5418 4705 50  0000 L CNN
+F 2 "" H 5338 4600 50  0001 C CNN
+F 3 "~" H 5300 4750 50  0001 C CNN
+	1    5300 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D88C341
+P 5300 4900
+F 0 "#PWR?" H 5300 4650 50  0001 C CNN
+F 1 "GND" H 5305 4727 50  0000 C CNN
+F 2 "" H 5300 4900 50  0001 C CNN
+F 3 "" H 5300 4900 50  0001 C CNN
+	1    5300 4900
+	1    0    0    -1  
+$EndComp
+Text Label 1950 5150 0    50   ~ 0
+12V
+$Comp
+L power:GND #PWR?
+U 1 1 5D88CD19
+P 4900 4900
+F 0 "#PWR?" H 4900 4650 50  0001 C CNN
+F 1 "GND" H 4905 4727 50  0000 C CNN
+F 2 "" H 4900 4900 50  0001 C CNN
+F 3 "" H 4900 4900 50  0001 C CNN
+	1    4900 4900
+	1    0    0    -1  
+$EndComp
+Connection ~ 2300 5150
+Wire Wire Line
+	4600 4600 4450 4600
+Wire Wire Line
+	2300 4600 2300 5150
+Wire Wire Line
+	4450 4600 4450 4200
+Wire Wire Line
+	4450 4200 5600 4200
+Wire Wire Line
+	5600 4200 5600 4600
+Connection ~ 4450 4600
+Wire Wire Line
+	4450 4600 2300 4600
+$Comp
+L power:GND #PWR?
+U 1 1 5D88D135
+P 5900 4900
+F 0 "#PWR?" H 5900 4650 50  0001 C CNN
+F 1 "GND" H 5905 4727 50  0000 C CNN
+F 2 "" H 5900 4900 50  0001 C CNN
+F 3 "" H 5900 4900 50  0001 C CNN
+	1    5900 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L ESP8266:ESP-12E U?
+U 1 1 5D89D1D3
+P 5750 1700
+F 0 "U?" H 5750 2465 50  0000 C CNN
+F 1 "ESP-12E" H 5750 2374 50  0000 C CNN
+F 2 "" H 5750 1700 50  0001 C CNN
+F 3 "http://l0l.org.uk/2014/12/esp8266-modules-hardware-guide-gotta-catch-em-all/" H 5750 1700 50  0001 C CNN
+	1    5750 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 2100 4850 3850
+Wire Wire Line
+	4850 3850 5300 3850
+Wire Wire Line
+	5300 3850 5300 4600
+Wire Wire Line
+	5200 4600 5300 4600
+Connection ~ 5300 4600
+$Comp
+L Connector:Screw_Terminal_01x02 J?
+U 1 1 5D89DD3D
+P 10750 1250
+F 0 "J?" H 10830 1242 50  0000 L CNN
+F 1 "Screw_Terminal_01x02" H 10830 1151 50  0000 L CNN
+F 2 "" H 10750 1250 50  0001 C CNN
+F 3 "~" H 10750 1250 50  0001 C CNN
+	1    10750 1250
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
